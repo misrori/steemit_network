@@ -36,10 +36,10 @@ return(adat)
 
 
 get_group_network <- function(my_names, node_size, type){
-  my_names <- c('misrori', "cuttie1979")
-  node_size <- "sp"
-  type <- 'following'
-  
+  #my_names <- 'misrori'
+  # node_size <- "sp"
+  # type <- 'following'
+  # 
   my_df <- data.frame()
   for (i in my_names){
     my_df <- rbind(my_df, get_network_data(i, type))
@@ -138,13 +138,10 @@ get_group_network <- function(my_names, node_size, type){
     
   }
   
-  
-  
- 
 }
 
 
-
+get_group_network('misrori', 'sp',"following")
 
 
 
